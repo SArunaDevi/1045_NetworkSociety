@@ -1,0 +1,222 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="admin_AdminMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script language="JavaScript" type="text/javascript">
+        javascript: window.history.forward(1);
+</script>
+    <style type="text/css">
+        body
+        {
+            background-repeat:no-repeat;
+        }
+        .style1
+        {
+            width: 102%;
+            height: 1103px;
+        }
+        .style2
+        {
+            width: 132px;
+        }
+        .style3
+        {
+            width: 236px;
+        }
+        .style4
+        {
+            width: 728px;
+        }
+        .style5
+        {
+            width: 75px;
+        }
+        .style6
+        {
+            width: 132px;
+            height: 220px;
+        }
+        .style7
+        {
+            width: 236px;
+            height: 220px;
+        }
+        .style8
+        {
+            width: 728px;
+            height: 220px;
+        }
+        .style9
+        {
+            width: 75px;
+            height: 220px;
+        }
+        .style10
+        {
+            width: 132px;
+            height: 727px;
+        }
+        .style11
+        {
+            width: 236px;
+            height: 727px;
+        }
+        .style12
+        {
+            width: 728px;
+            height: 727px;
+        }
+        .style13
+        {
+            width: 75px;
+            height: 727px;
+        }
+        .style14
+        {
+            width: 132px;
+            height: 91px;
+        }
+        .style15
+        {
+            width: 236px;
+            height: 91px;
+        }
+        .style16
+        {
+            width: 728px;
+            height: 91px;
+        }
+        .style17
+        {
+            width: 75px;
+            height: 91px;
+        }
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body background="images/adminbg.jpg" bgcolor="#ffeded">
+    <form id="form1" runat="server">
+    <div>
+    
+        <table class="style1" style="vertical-align: top">
+            <tr>
+                <td class="style6">
+                </td>
+                <td class="style7">
+                </td>
+                <td class="style8">
+                </td>
+                <td class="style9">
+                </td>
+            </tr>
+            <tr style="vertical-align: top">
+                <td class="style10">
+                </td>
+                <td class="style11">
+                    <asp:Image ID="Image3" runat="server" ImageUrl="~/admin/images/adminnav.jpg" 
+                        
+                        style="z-index: 1; left: 164px; top: 611px; position: absolute; width: 184px; height: 314px;" />
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/admin/images/adminnav.jpg" 
+                        style="z-index: 1; left: 164px; top: 212px; position: absolute; width: 184px" />
+                    <asp:LinkButton ID="LinkButton17" runat="server" Font-Bold="True" 
+                        Font-Names="Bell MT" ForeColor="#D965A2" 
+                        
+                        style="z-index: 2; left: 188px; top: 577px; position: absolute; width: 132px" 
+                        PostBackUrl="~/admin/Adminusersettings.aspx">Admin Settings</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton14" runat="server" Font-Bold="True" 
+                        Font-Names="Bell MT" ForeColor="#D965A2" 
+                        
+                        style="z-index: 2; left: 188px; top: 545px; position: absolute; width: 116px" 
+                        PostBackUrl="~/admin/AddPlacement.aspx">Add Placement</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton13" runat="server" Font-Bold="True" 
+                        Font-Names="Bell MT" ForeColor="#D965A2" 
+                        
+                        style="z-index: 2; left: 188px; top: 479px; position: absolute; width: 116px" 
+                        PostBackUrl="~/admin/AddUniversity.aspx">Add University</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton12" runat="server" Font-Bold="True" 
+                        Font-Names="Bell MT" ForeColor="#D965A2" 
+                        
+                        style="z-index: 2; left: 188px; top: 413px; position: absolute; width: 116px" 
+                        PostBackUrl="~/admin/AddCollege.aspx">Add College</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton11" runat="server" Font-Bold="True" 
+                        Font-Names="Bell MT" ForeColor="#D965A2" 
+                        
+                        style="z-index: 2; left: 188px; top: 382px; position: absolute; width: 116px" 
+                        PostBackUrl="~/admin/DeleteNews.aspx">Update News</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton10" runat="server" Font-Bold="True" 
+                        Font-Names="Bell MT" ForeColor="#D965A2" 
+                        
+                        style="z-index: 2; left: 188px; top: 349px; position: absolute; width: 116px" 
+                        PostBackUrl="~/admin/AddNews.aspx">Add News</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton9" runat="server" Font-Bold="True" 
+                        Font-Names="Bell MT" ForeColor="#D965A2" 
+                        
+                        style="z-index: 2; left: 187px; top: 318px; position: absolute; width: 142px" 
+                        PostBackUrl="~/admin/NewCantoos.aspx">Message History</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton21" runat="server" Font-Bold="True" 
+                        Font-Names="Bell MT" ForeColor="#D965A2" 
+                        
+                        
+                        
+                        style="z-index: 2; left: 1066px; top: 202px; position: absolute; width: 56px" 
+                        onclick="LinkButton21_Click" PostBackUrl="~/admin/AdminLogin.aspx">Logout</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton20" runat="server" Font-Bold="True" 
+                        Font-Names="Bell MT" ForeColor="#D965A2" 
+                        
+                        style="z-index: 2; left: 188px; top: 512px; position: absolute; width: 116px" 
+                        PostBackUrl="~/admin/ViewUniversity.aspx">View University</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton19" runat="server" Font-Bold="True" 
+                        Font-Names="Bell MT" ForeColor="#D965A2" 
+                        
+                        style="z-index: 2; left: 188px; top: 447px; position: absolute; width: 116px" 
+                        PostBackUrl="~/admin/ViewColleges.aspx">View Colleges</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton8" runat="server" Font-Bold="True" 
+                        Font-Names="Bell MT" ForeColor="#D965A2" 
+                        
+                        style="z-index: 2; left: 188px; top: 284px; position: absolute; width: 116px" 
+                        PostBackUrl="~/admin/NewUser.aspx">User List</asp:LinkButton>
+                </td>
+                <td class="style12" 
+                    style="background-image: url('/D:/Inetpub/wwwroot/Classmates/images/cntainerbg.jpg')">
+                    <asp:Image ID="Image2" runat="server" ImageUrl="~/admin/images/cntainerbg.jpg" 
+                        
+                        style="z-index: 1; left: 380px; top: 216px; position: absolute; height: 699px; width: 758px" />
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <p>
+                            <br />
+                        </p>
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td class="style13">
+                </td>
+            </tr>
+            <tr>
+                <td class="style14">
+                </td>
+                <td class="style15">
+                </td>
+                <td class="style16">
+                </td>
+                <td class="style17">
+                </td>
+            </tr>
+            <tr>
+                <td class="style2">
+                    &nbsp;</td>
+                <td class="style3">
+                    &nbsp;</td>
+                <td class="style4">
+                    &nbsp;</td>
+                <td class="style5">
+                    &nbsp;</td>
+            </tr>
+        </table>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    </form>
+</body>
+</html>
